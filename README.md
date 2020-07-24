@@ -1,7 +1,7 @@
 # Auto_brute
 this is an automated brute-forcing attack tool edited version of t14m4t https://github.com/MS-WEB-BN/t14m4t, wrapper of [THC-Hydra](https://github.com/vanhauser-thc/thc-hydra) and [Nmap Security Scanner](https://github.com/nmap/nmap).
 
-# what's change was;
+# what's change;
 t14m4t was design to automated brute force given single IP or list of IP Addresses. and auto_brute aim to perform the same technique but instead of scaning list of IPs you could scan list of segment of the IP address eg 10.10.10.0/24 
 
 
