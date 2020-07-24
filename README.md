@@ -10,12 +10,12 @@ t14m4t was design to automated brute force given single IP or list of IP Address
 - Target can also be a file, where each target is separated by return. 
 - Optional: Number of threads, from 1 to 64. 16 (default) threads.
 ```
-# ./auto_brute.sh <target> <number of threads>
+# ./Auto_brute.sh <target> <number of threads>
 ```
-Example:
+#Example:
 ```
-# ./t14m4t 10.10.10.0/24
-# ./t14m4t /targets/targetlist.txt 32
+# ./Auto_brute.sh 10.10.10.0/24
+# ./Auto_brute.sh /targets/targetlist.txt 32
 ```
 # Supported services:
 
