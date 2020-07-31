@@ -58,7 +58,7 @@ bruteforce() {
 		sleep 1
 		hydra -C $ssh_up $1 ssh -e ns -o Output/${1}/ssh_${1}.txt -I -V -t $thread
         hydra -L $ssh_u -P $ssh_p $1 ssh -e ns -o Output/${1}/ssh1_${1}.txt -I -V -t $thread
-		hydra -L $user -p $pass ssh -e ns -o Output/${1}/ssh2_${1}.txt -I -V -t $thread
+		hydra -L $user -p $pass $1 ssh -e ns -o Output/${1}/ssh2_${1}.txt -I -V -t $thread
                 finished_brute $1
         else
                 echo -e "[${red}!${default}] Port 22(SSH) is not open. Skipping to next port..."
@@ -193,7 +193,7 @@ bruteforce() {
                 echo -e "[${yellow}*${default}] Port 3306(mysql) is open. Starting bruteforce...\n"
 		sleep 1
 		hydra -C $mysql_up $1 mysql -e ns -o Output/${1}/mysql_${1}.txt -I -V -t $thread
-		hydra -L $sql_u -P $sql_p $TARGET mysql -e ns -o Output/${1}/mysql_1_${1}.txt -I -V -t $thread
+		hydra -L $sql_u -P $sql_p $1 mysql -e ns -o Output/${1}/mysql_1_${1}.txt -I -V -t $thread
                 finished_brute $1
         else
                 echo -e "[${red}!${default}] Port 3306(mysql) is not open. Skipping to next port..."
