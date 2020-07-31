@@ -20,4 +20,6 @@ t14m4t was design to automated brute force given single IP or list of IP Address
 # Supported services:
 
 FTP | SSH | Telnet | SMTP | HTTP | POP3 | SMB | SNMP | LDAP | HTTPS | rexec | rlogin | rsh | IMAP | mssql | mysql | postgres | oracle | RDP | VNC | IRC
+# collect result
+To collect the result use read_output.py here https://github.com/toxin24/others
 
